@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="posts_style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>W3 School Copy</title>
+</head>
+<body>
+    <ul class="side_menu">
+        <li><a href="home.html">Home</a></li>
+        <li class="dropdown">
+            <a class="active" href="posts.html">Posts</a>
+            <div class="dropdown-content">
+                <a>Catagory 1</a>
+                <a>Catagory 2</a>
+                <a>Catagory 3</a>
+            </div>
+        </li>
+        <li><a>About Us</a></li>
+        <li><a>Projects</a></li>
+        <li><a>Settings</a></li>
+    </ul>
+    <div id = "main">
+        <!-- <div id="top_bar">
+            <input type="text" id="search_input" placeholder="Search"/>
+            <button id="search_button" type="button" onclick=""><img src="searchicon.png"></button>
+        </div> -->
+        <h1 style="text-align: center;">All Posts</h1>
+        <div class="filter_container">
+            <select id="catagory_select">
+                <option value="sports">Sports</option>
+                <option value="health">Health</option>
+                <option value="science">Science</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="politics">Politics</option>
+                <option value="general">General</option>
+                <option value="all">All</option>
+            </select>
+            <button onclick="filter()">Filter</button>
+        </div>
+        <br>
+        <p id="no_posts_msg" style="display: none;">No posts on in this catagory</p>
+        <div class = "posts_area">
+
+            <template>
+                <div class="post catagory">
+                    <h3>Title of Post</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+            </template>
+
+            <div class="post sports">
+                <h3>Sports1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="post politics">
+                <h3>Politics1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="post entertainment">
+                <h3>Ent.1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="post politics">
+                <h3>Politics2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="post sports">
+                <h3>Sports2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="post general">
+                <h3>General1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="post science">
+                <h3>Science1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="post sports">
+                <h3>Sports3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="post entertainment">
+                <h3>Ente2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="post science">
+                <h3>Science2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="post sports">
+                <h3>Sports4</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="post sports">
+                <h3>Sports5</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="post sports">
+                <h3>Sports6</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
+<script src="posts.js" defer>
+    
+</script>
+</body>
+</html>
