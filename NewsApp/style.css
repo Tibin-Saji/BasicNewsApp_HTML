@@ -26,6 +26,9 @@ input[type=button], button {
 input[type=button]:hover, button:hover {
     opacity: 0.8;
 }
+input[type=button]:disabled, button:disabled {
+    opacity: 0.4;
+}
 
 .close {
     position: absolute;
